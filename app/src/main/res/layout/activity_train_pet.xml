@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context=".TrainPet"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/latih_kucing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Melatih Kucing Melakukan Berbagai Trik"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="20dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="Pastikan kucing Anda tertarik.
+Sebelum mulai mengajarkan trik baru pada kucing, pastikan ia tahu bahwa Anda sedang mencoba mengajarkan sesuatu padanya.
+Pegang camilan di depan hidung kucing sehingga ia mengerti bahwa ada hadiah yang mungkin menunggunya.
+Gerakkan camilan di tangan Anda ke atas dan belakang kepalanya secara perlahan.
+Lanjutkan melakukan hal ini hingga kucing mendongakkan kepalanya dan duduk.
+Puji kucing dan berikan camilan segera setelah ia menyelesaikan trik duduk."/>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Lakukan trik di bawah ini"
+            android:padding="20dp"/>
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/latih_kucing_gif"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mulai" />
+
+        <Button
+            android:id="@+id/btnBerhenti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

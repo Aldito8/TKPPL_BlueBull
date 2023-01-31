@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context=".ArticleActivity2">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                app:srcCompat="@drawable/kucing6" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="Memelihara Kucing Bikin Hidup Lebih Sehat dan Bahagia, Benarkah?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Di balik kecintaan seseorang terhadap kucing, memelihara binatang tersebut rupanya membawa banyak manfaat bagi kesehatan mental dan fisik pemiliknya."/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Lebih Bahagia"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Berdasarkan hasil penelitian di Australia, para pemilik kucing cenderung memiliki kesehatan kejiwaan yang lebih baik ketimbang mereka yang tak memiliki binatang peliharaan. Dalam kuisioner yang disertakan pada riset itu, para pemilik kucing mengaku merasa lebih bahagia, lebih percaya diri, dan minim kegelisahan. Mereka pun mengaku tidur lebih nyenyak, lebih fokus, hingga lebih mudah menghadapi permasalahan kehidupan."/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Penghilang Stress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Selanjutnya, dalam sebuah penelitian lain, sebanyak 120 pasangan suami istri menjadi objek penelitian untuk mengetahui bagaimana mereka merespons stres. Lalu, apakah kucing memiliki peran dalam menghilangkan stres tersebut? Dikaitkan dengan denyut jantung dan tekanan darah, mereka diposisikan dalam kondisi memegang air es dengan suhu empat derajat celcius selama dua menit. Posisinya, orang-orang itu ada yang duduk dalam ruangan sendirian, ada mereka yang bersama dengan peliharaannya, dan ada yang bersama pasangannya, atau keduanya."/>
+        </LinearLayout>
+
+</ScrollView>

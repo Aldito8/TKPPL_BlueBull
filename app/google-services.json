@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "28287463425",
+    "project_id": "myproject-a05ca",
+    "storage_bucket": "myproject-a05ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28287463425:android:a8a3af5a155c62f9cbd000",
+        "android_client_info": {
+          "package_name": "com.example.fafafapet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28287463425-5ru6pn6eoh30ob3qg02nlree1qp9edfr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ2AAprFDRgGDPtZzh_dvZ_OcAGEz8EQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28287463425-5ru6pn6eoh30ob3qg02nlree1qp9edfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

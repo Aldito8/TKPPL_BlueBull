@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fafafapet">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FAFAFAPet">
+        <receiver
+            android:name=".MyWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/my_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".MyWidgetConfigureActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/Theme.FAFAFAPet.NoActionBar" />
+        <activity
+            android:name=".AccountActivity"
+            android:exported="false"
+            android:label="Pengaturan Akun"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/NoAction" />
+        <activity
+            android:name=".petListActvity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".MyAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".MyConnectionReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".PetForm"
+            android:exported="false"
+            android:label="Tambah Data Hewan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Schedule"
+            android:exported="false"
+            android:label="Jadwal Konsultasi"
+            android:parentActivityName=".DetailDoctorActivity2" />
+        <activity
+            android:name=".ArticleActivity2"
+            android:exported="false"
+            android:label="Artikel"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".DetailDoctorActivity2"
+            android:exported="false"
+            android:label="Dokter Hewan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailDoctorActivity"
+            android:exported="false"
+            android:label="Dokter Hewan"
+            android:parentActivityName=".DoctorActivity" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false"
+            android:label="Belanja"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TrainPet"
+            android:exported="false"
+            android:label="Latih Hewan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShopItem"
+            android:exported="false"
+            android:label="Belanja"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DoctorActivity"
+            android:exported="false"
+            android:label="Dokter Hewan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ArticleActivity"
+            android:exported="false"
+            android:label="Artikel"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Petto"
+            android:theme="@style/NoAction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true"
+            android:theme="@style/NoAction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
