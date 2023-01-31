@@ -58,7 +58,22 @@ class DoctorActivity : AppCompatActivity(){
         var layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
         override fun getView(position: Int, view: View?, viewGroup: ViewGroup?): View {
-            
+            var view = view;
+            if(view == null){
+                view = layoutInflater.inflate(R.layout.list_item_view_doctor, viewGroup, false)
+            }
+
+            var imageView = view?.findViewById<ImageView>(R.id.imageDoctor)
+            var tvImageName = view?.findViewById<TextView>(R.id.nameDoctor)
+            var specialist = view?.findViewById<TextView>(R.id.specialist)
+            var location = view?.findViewById<TextView>(R.id.location)
+
+            imageView?.setImageResource(itemModel[position].icons!!)
+            tvImageName?.text = itemModel[position].name
+            specialist?.text = itemModel[position].fields
+            location?.text = itemModel[position].location
+
+            return view!!
         }
 
         override fun getCount(): Int {
