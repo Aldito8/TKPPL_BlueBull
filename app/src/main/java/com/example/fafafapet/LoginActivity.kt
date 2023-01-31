@@ -28,11 +28,5 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun Masuk(view: View){
-
-        var intentReply = Intent(this, MainActivity::class.java)
-        startActivity(intentReply)
-    }
-
 
 }
