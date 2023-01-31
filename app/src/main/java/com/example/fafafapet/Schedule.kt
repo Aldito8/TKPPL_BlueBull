@@ -24,13 +24,7 @@ class Schedule : AppCompatActivity() {
         return sdf.format(cal.time)
     }
 
-    private fun myTimePicker() : TimePickerDialog.OnTimeSetListener{
-        val timeListener = object : TimePickerDialog.OnTimeSetListener{
-            override fun onTimeSet(p0: TimePicker?, p1: Int, p2: Int) {
-                cal.set(Calendar.HOUR_OF_DAY,p1)
-                cal.set(Calendar.MINUTE,p2)
-                textWaktu.text = setMyTimeFormat()
-            }
+    
         }
         return timeListener
     }
