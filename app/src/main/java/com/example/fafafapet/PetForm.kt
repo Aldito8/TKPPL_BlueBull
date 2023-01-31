@@ -62,4 +62,8 @@ class PetForm : AppCompatActivity() {
         }
     }
 
-    
+    fun LihatPeliharaaan(view: View) {
+        var intentPetList = Intent(this, petListActvity::class.java)
+        startActivity(intentPetList)
+    }
+}
