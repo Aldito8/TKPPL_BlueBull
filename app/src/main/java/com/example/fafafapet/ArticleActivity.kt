@@ -15,6 +15,11 @@ class ArticleActivity : AppCompatActivity() {
         setContentView(R.layout.activity_article)
     }
 
-    
+    fun lihatSemua0(view: View) {}
+
+    fun LihatArtikel(view: View){
+        var itentArticleActivity0 = Intent(this, ArticleActivity2::class.java)
+        startActivity(itentArticleActivity0)
+    }
 
 }
